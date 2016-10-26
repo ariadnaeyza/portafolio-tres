@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*=============MENU==============*/
+.avatar{
+    width: 100%
+}
+.logo-name {
+    color: #Eee;
+    font-weight: bold;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: rgba(96, 125, 139, 0.41);
+}
+
+@media screen and (max-width: 768px){
+    .avatar{
+        display:none;
+    }
+}
+
+/*=========INICIO=========*/
+#inicio{
+    background-image: url(../img/banner/bg-inicio.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 30% 0% 30% 0%;
+    height: 523px;
+}
+.linea-espacio {
+    width: 20%;
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-bottom:1px solid #fff;
+}
+#inicio h1{
+    font-size: 55px;
+    margin: 0px;
+}
+
+/*================SOBRE-MI=================*/
+
+
+/*==========CONTACTO==========*/
+#contacto{
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000000;
+    padding: 30% 0% 50% 0%;
+    height: 575px;
+    background-image: url(../img/banner/bg-contacto.png);
+}
+ul.social-network {	
+    margin: 0;
+    margin-left:0;
+    padding-left: 0;
+    list-style: none;
+}
+ul.social-network li {
+    display: inline;
+    margin: 5px 5px;
+}
+
+ul.social-network li a:hover span .fa-circle {
+    color: black;
+}
+.icon-social{
+    color: #a94442;
+}
