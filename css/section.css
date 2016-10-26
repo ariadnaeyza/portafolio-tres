@@ -2,10 +2,10 @@
 *{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
 }
 
 /*=============MENU==============*/
@@ -13,11 +13,11 @@
     width: 100%
 }
 .logo-name {
+    background-color: rgba(96, 125, 139, 0.41);
     color: #Eee;
     font-weight: bold;
     padding-top: 4%;
     padding-bottom: 4%;
-    background-color: rgba(96, 125, 139, 0.41);
 }
 
 @media screen and (max-width: 768px){
@@ -36,11 +36,11 @@
     height: 523px;
 }
 .linea-espacio {
-    width: 20%;
+    border-bottom:1px solid #fff;
     margin:0 auto;
     margin-top: 20px;
     margin-bottom: 25px;
-    border-bottom:1px solid #fff;
+    width: 20%;
 }
 #inicio h1{
     font-size: 55px;
@@ -52,12 +52,13 @@
 
 /*==========CONTACTO==========*/
 #contacto{
-    background-size: cover;
     background-attachment: fixed;
-    color: #000000;
-    padding: 30% 0% 50% 0%;
-    height: 575px;
+    background-color: black;
     background-image: url(../img/banner/bg-contacto.png);
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.98);
+    height: 575px;
+    padding: 30% 0% 50% 0%;
 }
 ul.social-network {	
     margin: 0;
@@ -66,8 +67,8 @@ ul.social-network {
     list-style: none;
 }
 ul.social-network li {
-    display: inline;
     margin: 5px 5px;
+    display: inline;
 }
 
 ul.social-network li a:hover span .fa-circle {
