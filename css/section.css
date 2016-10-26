@@ -2,7 +2,7 @@
 *{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', serif;
     margin: 0px;
     padding: 0px;
     text-align: center;
@@ -25,7 +25,11 @@
         display:none;
     }
 }
-
+/**==========SECCIONES===========*/
+section h2{
+    font-size: 3em;
+    letter-spacing: -4px;
+}
 /*=========INICIO=========*/
 #inicio{
     background-image: url(../img/banner/bg-inicio.jpg);
@@ -48,8 +52,22 @@
 }
 
 /*================SOBRE-MI=================*/
-
-
+#sobreMi{
+    height: 600px;
+}
+/*============PORTAFOLIO============*/
+#portafolio{
+    background-image: url(../img/banner/bg-portfolio.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    height: 600px;
+}
+/*==============HABILIDADES==============*/
+#habilidad{
+    height: 600px;
+    
+}
 /*==========CONTACTO==========*/
 #contacto{
     background-attachment: fixed;
@@ -57,8 +75,8 @@
     background-image: url(../img/banner/bg-contacto.png);
     background-size: cover;
     color: rgba(255, 255, 255, 0.98);
-    height: 575px;
-    padding: 30% 0% 50% 0%;
+    height: 665px;
+    padding: 17% 0% 0% 0%;
 }
 ul.social-network {	
     margin: 0;
