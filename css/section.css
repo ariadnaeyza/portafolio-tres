@@ -8,6 +8,13 @@
     text-align: center;
 }
 
+/*============UTILIDADES==========*/
+.pr-15{
+    padding-right:15px;
+}
+.p-15{
+    padding: 15px;
+}
 /*=============MENU==============*/
 .avatar{
     width: 100%
@@ -50,23 +57,22 @@ section h2{
     font-size: 55px;
     margin: 0px;
 }
+.perfil{
+    height: 157px;
+}
 
 /*================SOBRE-MI=================*/
 #sobreMi{
-    height: 600px;
+    height: 660px;
 }
+
 /*============PORTAFOLIO============*/
 #portafolio{
     background-image: url(../img/banner/bg-portfolio.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    height: 600px;
-}
-/*==============HABILIDADES==============*/
-#habilidad{
-    height: 600px;
-    
+    height: 670px;
 }
 /*==========CONTACTO==========*/
 #contacto{
