@@ -4,22 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximun-scale=1.0,minimun-scale=1.0">
 
     <title>Ariadna Eyzaguirre | Portafolio</title>
 
     <link rel="icon" type="image/png" href="img/icon.png">
-    <link rel="stylesheet" href="css/section.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/navbar-fixed-side.css">
+    <link rel="stylesheet" href="css/text-animate.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-2 col-lg-2">
+            <!------------------BARRA-LATERAL----------------->
+            <div class="col-sm-2">
                 <nav class="navbar navbar-inverse navbar-fixed-side">
                     <div class="container">
                         <div class="navbar-header">
@@ -34,157 +37,239 @@
                         </div>
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <li><a href="#inicio" class="page-scroll">INICIO</a></li>
-                                <li><a href="#sobreMi" class="page-scroll">SOBRE MI</a></li>
-                                <li><a href="#habilidad" class="page-scroll">HABILIDAD</a></li>
-                                <li><a href="#portafolio" class="page-scroll">PORTAFOLIO</a></li>
-                                <li><a href="#contacto" class="page-scroll">CONTACTO</a></li>
+                                <li><a href="#home" class="page-scroll">INICIO</a></li>
+                                <li><a href="#aboutMe" class="page-scroll">SOBRE MI</a></li>
+                                <li><a href="#skills" class="page-scroll">HABILIDAD</a></li>
+                                <li><a href="#portfolio" class="page-scroll">PORTAFOLIO</a></li>
+                                <li><a href="#contact" class="page-scroll">CONTACTO</a></li>
                             </ul>
                             <div class="text-center">Copyright &copy; 2016 | AriaEyza </div>
                         </div>
                     </div>
                 </nav>
             </div>
-            <div class="col-sm-9 col-lg-10">
-               
-               <!=========================INICIO=========================>
-                <section id="inicio">
-                    <div class="cont-inicio">
-                        <h1>ARIADNA EYZAGUIRRE</h1>
-                        <div class="linea-espacio"></div>
-                        <h4>FRONT-END DEVELOPER</h4>
-                    </div>
-                </section>
-                
-                <!========================SOBRE-MI=========================>
-                <section id="sobreMi">
-                    <div class="cont-sobreMi">
+            <div class="col-sm-10">
+                <!-----------------HOME----------------->
+                <section id="home">
+                   <div class="fluid-container cont-home">
+                       <div class="row">
+                           <svg viewBox="0 0 1700 300">
+                               <symbol id="s-text">
+                                   <text text-anchor="middle" x="50%" y="80%">Ariadna Eyzaguirre</text>
+                               </symbol>
+                               <g class = "g-ants">
+                                   <use xlink:href="#s-text" class="text-copy"></use>
+                                   <use xlink:href="#s-text" class="text-copy"></use>
+                                   <use xlink:href="#s-text" class="text-copy"></use>
+                                   <use xlink:href="#s-text" class="text-copy"></use>
+                                   <use xlink:href="#s-text" class="text-copy"></use>
+                               </g>
+                           </svg>
+                       </div>
+                       <div class="line-space"></div>
+                       <div class="row">
+                       </div>
+                   </div>                   
+               </section>
+                <!--------------------SOBRE-MI----------------->
+                <section id="aboutMe">
+                    <div class="cont-aboutMe fluid-container">
                         <div class="row">
-                            <h2 class="section-tittle">Acerca de mí</h2>
+                            <h2 class="title">SOBRE MI</h2>
                             <img src="img/separador.png" alt="separador">
                         </div>
                         <div class="row">
                             <div class="col-sm-4">
-                                <img src="img/perfil.jpg" class="img-thumbnail perfil" alt="perfil">
+                                <img src="img/perfil.JPG" class="img-circle img-perfil" alt="perfil">
                             </div>
-                            <div class="col-sm-8">
-                                <p class="p-15">Hola!, tengo 18 años, soy desarrolladora front-end web junior, de la quinta promoción de <a href="#">LABORATORIA</a>. Tengo conocimientos previos sobre la carrera de comunicación audiovisual. <br>Uno de mis pasatiempos es la fotografia y grabar pequeños momentos de la vida. Me gusta mucho viajar mucho, soy autodidacta, curiosa, alegre!</p>
+                            <div class="col-sm-7">
+                                <p>Hola!, tengo 18 años, soy desarrolladora front-end web junior, de la quinta promoción de LABORATORIA. Tengo conocimientos previos sobre la carrera de comunicación audiovisual.
+                                <br>Amo todo lo que esté referido al arte,la musica, la danza, dibujar en lienzo. Tengo una bici avión para el servicio a las personas y los animales, me gusta luchar por lo que me parece injusto o deshonesto, odio las mentiras me gusta ser directa y parcial.
+                                <br>Mis pasatiempos son la fotografia y grabar pequeños momentos de la vida. Me gusta mucho viajar, soy autodidacta, curiosa, alegre!</p>
                             </div>
                         </div>
                     </div>
                 </section>
-               
-               <!===================PORTAFOLIO=====================>
-                <section id="portafolio">
-                   <div class="row">
-                      <div class="col-sm-12">
-                          <h2 class="section-tittle">Portafolio</h2>
-                          <img src="img/separador.png" alt="separador">
-                      </div>
-                       <div class="col-sm-4">
-                           <div class="hovereffect">
-                               <img class="img-responsive" src="img/portafolio/flatnes.png" alt="">
-                               <div class="overlay">
-                                   <h2>PORTAFOLIO</h2>
-                                   <p><a href="#">Esta hecho de puro css y html</a></p> 
-                               </div>
-                           </div>
-                       </div>
-                       <div class="col-sm-4">
-                           <div class="hovereffect">
-                               <img class="img-responsive" src="img/portafolio/flatnes.png" alt="">
-                               <div class="overlay">
-                                   <h2>PORTAFOLIO</h2>
-                                   <p><a href="#">Esta hecho de puro css y html</a></p> 
-                               </div>
-                           </div>
-                       </div>
-                       <div class="col-sm-4">
-                           <div class="hovereffect">
-                               <img class="img-responsive" src="img/portafolio/flatnes.png" alt="">
-                               <div class="overlay">
-                                   <h2>PORTAFOLIO</h2>
-                                   <p><a href="#">Esta hecho de puro css y html</a></p> 
-                               </div>
-                           </div>
-                       </div>
-                       <div class="col-sm-4">
-                           <div class="hovereffect">
-                               <img class="img-responsive" src="img/portafolio/flatnes.png" alt="">
-                               <div class="overlay">
-                                   <h2>PORTAFOLIO</h2>
-                                   <p><a href="#">Esta hecho de puro css y html</a></p> 
-                               </div>
-                           </div>
-                       </div>
-                       <div class="col-sm-4">
-                           <div class="hovereffect">
-                               <img class="img-responsive" src="img/portafolio/flatnes.png" alt="">
-                               <div class="overlay">
-                                   <h2>PORTAFOLIO</h2>
-                                   <p><a href="#">Esta hecho de puro css y html</a></p> 
-                               </div>
-                           </div>
-                       </div>
-                       <div class="col-sm-4">
-                           <div class="hovereffect">
-                               <img class="img-responsive" src="img/portafolio/flatnes.png" alt="">
-                               <div class="overlay">
-                                   <h2>PORTAFOLIO</h2>
-                                   <p><a href="#">Esta hecho de puro css y html</a></p> 
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                </section>
-                
-                <!====================HABILIDAD=====================>
-                <section id="habilidad">
-                   <div class="row">
-                       <h2 class="section-tittle">Habilidades</h2>
-                       <img src="img/separador.png" alt="separador">
+                <!------------------PORTAFOLIO--------------------->
+                <section id="portfolio">
+                    <div class="fluid-container cont-portfolio">
+                        <div class="row">
+                            <h2 class="titulo">PORTAFOLIO</h2>
+                            <img src="img/separador.png" alt="separador">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="http://placehold.it/350x250" alt="">
+                                    <div class="overlay">
+                                        <h2>Effect 13</h2>
+                                        <p><a href="#">LINK HERE</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="http://placehold.it/350x250" alt="">
+                                    <div class="overlay">
+                                        <h2>Effect 13</h2>
+                                        <p><a href="#">LINK HERE</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="http://placehold.it/350x250" alt="">
+                                    <div class="overlay">
+                                        <h2>Effect 13</h2>
+                                        <p><a href="#">LINK HERE</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="http://placehold.it/350x250" alt="">
+                                    <div class="overlay">
+                                        <h2>Effect 13</h2>
+                                        <p>
+                                            <a href="#">LINK HERE</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="http://placehold.it/350x250" alt="">
+                                    <div class="overlay">
+                                        <h2>Effect 13</h2>
+                                        <p>
+                                            <a href="#">LINK HERE</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="http://placehold.it/350x250" alt="">
+                                    <div class="overlay">
+                                        <h2>Effect 13</h2>
+                                        <p>
+                                            <a href="#">LINK HERE</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section id="contacto" class="text-center">
-                    <div class="col-md-offset-2 col-md-8">
-                        <div class="mar-top10-rem">
-                            <h2 class="section-tittle">CONTACTO</h2>
-                            <p>Me puede contactar mediante:</p>
-                            <a href="mailto:ariadna.eyzaguirre@gmail.com">ariadna.eyzaguirre@gmail.com</a>
-                            <ul class="social-network">
-                                <li>
-                                    <a href="https://www.linkedin.com/in/ariadna-eyzaguirre">
-                                        <span class="fa-stack fa-2x icon-social">
-                                                <i class="fa fa-circle fa-stack-2x"></i>
-                                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                            </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/ariadnaeyza">
-                                        <span class="fa-stack fa-2x icon-social">
-                                                <i class="fa fa-circle fa-stack-2x"></i>
-                                                <i class="fa fa fa-github fa-stack-1x fa-inverse"></i>
-                                            </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://es.pinterest.com/ariaeyza/">
-                                        <span class="fa-stack fa-2x icon-social">
-                                                <i class="fa fa-circle fa-stack-2x"></i>
-                                                <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
-                                            </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailto:ariadna.eyzaguirre@gmail.com">
-                                        <span class="fa-stack fa-2x icon-social">
-                                                <i class="fa fa-circle fa-stack-2x"></i>
-                                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>         
-                                            </span>
-                                    </a>
-                                </li>
-                            </ul>
+                <!------------HABILIDAD------------>
+                <section id="skills">
+                    <div class="fluid-container cont-skills">
+                        <div class="row">
+                            <h2 class="title">HABILIDAD</h2>
+                            <img src="img/separador.png" alt="separador">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="skillbar clearfix " data-percent="90%">
+                                    <div class="skillbar-title" style="background:transparent;"><span>HTML5</span></div>
+                                    <div class="skillbar-bar" style="background: #e67e22;"></div>
+                                    <div class="skill-bar-percent">90%</div>
+                                </div>
+
+                                <div class="skillbar clearfix " data-percent="75%">
+                                    <div class="skillbar-title" style="background:transparent;"><span>CSS3</span></div>
+                                    <div class="skillbar-bar" style="background: #3498db;"></div>
+                                    <div class="skill-bar-percent">75%</div>
+                                </div>
+
+                                <div class="skillbar clearfix " data-percent="75%">
+                                    <div class="skillbar-title" style="background:transparent;"><span>RESPONSIVE</span></div>
+                                    <div class="skillbar-bar" style="background: #525252;"></div>
+                                    <div class="skill-bar-percent">75%</div>
+                                </div>
+
+                                <div class="skillbar clearfix " data-percent="65%">
+                                    <div class="skillbar-title" style="background:transparent;"><span>GITHUB</span></div>
+                                    <div class="skillbar-bar" style="background: #009688;"></div>
+                                    <div class="skill-bar-percent">65%</div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="skillbar clearfix " data-percent="70%">
+                                    <div class="skillbar-title" style="background:transparent;"><span>BOOTSTRAP</span></div>
+                                    <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                                    <div class="skill-bar-percent">70%</div>
+                                </div>
+
+                                <div class="skillbar clearfix " data-percent="60%">
+                                    <div class="skillbar-title" style="background:transparent;"><span>JAVASCRIPT</span></div>
+                                    <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                                    <div class="skill-bar-percent">60%</div>
+                                </div>
+
+                                <div class="skillbar clearfix " data-percent="30%">
+                                    <div class="skillbar-title" style="background:transparent;"><span>jQuery</span></div>
+                                    <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                                    <div class="skill-bar-percent">30%</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-------------------CONTACTO---------------------->
+                <section id="contact">
+                    <div class="fluid-container cont-contact">
+                        <div class="row">
+                            <div class="col-md-offset-2 col-md-8">
+                                <div class="mar-top10-rem">
+                                    <h2 class="title">CONTACTO</h2>
+                                    <p>Me puede contactar mediante:</p>
+                                    <a href="mailto:ariadna.eyzaguirre@gmail.com">ariadna.eyzaguirre@gmail.com</a>
+                                    <ul class="social-network">
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/ariadna-eyzaguirre">
+                                                <span class="fa-stack fa-2x icon-social">
+                                                   <i class="fa fa-circle fa-stack-2x"></i>
+                                                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                               </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/ariadnaeyza">
+                                                <span class="fa-stack fa-2x icon-social">
+                                                   <i class="fa fa-circle fa-stack-2x"></i>
+                                                   <i class="fa fa fa-github fa-stack-1x fa-inverse"></i>
+                                               </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://es.pinterest.com/ariaeyza/">
+                                                <span class="fa-stack fa-2x icon-social">
+                                                   <i class="fa fa-circle fa-stack-2x"></i>
+                                                   <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                                               </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:ariadna.eyzaguirre@gmail.com">
+                                                <span class="fa-stack fa-2x icon-social">
+                                                   <i class="fa fa-circle fa-stack-2x"></i>
+                                                   <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>         
+                                               </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -192,6 +277,7 @@
         </div>
     </div>
     <!====JS====>
+    <script src="js/type.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
