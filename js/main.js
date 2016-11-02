@@ -1,11 +1,3 @@
-jQuery(document).ready(function(){
-    jQuery('.skillbar').each(function(){
-        jQuery(this).find('.skillbar-bar').animate({
-            width:jQuery(this).attr('data-percent')
-        },10000);
-    });
-});
-
 function maquina(contenedor,texto,intervalo){
     // Calculamos la longitud del texto
     longitud = texto.length;
@@ -31,3 +23,11 @@ function maquina(contenedor,texto,intervalo){
 var texto = "FRONT - END DEVELOPER";
 // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
 maquina("maquinas",texto,120);
+
+jQuery(document).ready(function(){
+    jQuery('.skillbar').each(function(){
+        jQuery(this).find('.skillbar-bar').animate({
+            width:jQuery(this).attr('data-percent')
+        },10000);
+    });
+});
