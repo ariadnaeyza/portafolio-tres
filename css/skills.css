@@ -1,3 +1,14 @@
+#skills {
+  padding-top: 80px;
+}
+
+#skills h1{
+  font-size: 85px;
+  font-family: 'Playball', cursive;
+  font-weight:bold;
+  padding-bottom: 20px;
+}
+
 .chart {
   position: relative;
   display: inline-block;

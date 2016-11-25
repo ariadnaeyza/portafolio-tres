@@ -1,0 +1,55 @@
+#aboutme {
+    text-align: center;
+    color: #fff;
+    background-color: #E9BCC6;
+}
+
+#aboutme p{
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+    padding: 5px 39px;
+}
+
+#aboutme .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#aboutme img {
+    width: 80%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.name {
+    font-size: 380%;
+    font-family: 'Playball', cursive;
+    font-weight:bold;
+    padding-bottom: 20px;
+    display: block;
+    line-height: 150px;
+    margin-bottom: 30px;
+    color: dimgray;
+    text-shadow: 4px 4px #fff;
+}
+
+#aboutme .intro-text .text {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+@media(min-width:768px) {
+    #aboutme .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .name {
+        font-size: 4.75em;
+    }
+
+    #aboutme .intro-text .text {
+        font-size: 1.75em;
+    }
+}
