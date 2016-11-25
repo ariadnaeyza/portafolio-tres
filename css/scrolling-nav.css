@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 body {
     width: 100%;
     height: 100%;
@@ -9,7 +7,6 @@ html {
     width: 100%;
     height: 100%;
 }
->>>>>>> master
 .navbar {
     margin-bottom: 0;
     z-index: 9999;
@@ -38,35 +35,3 @@ html {
         padding: 0;
     }
 }
-<<<<<<< HEAD
-
-.home-section {
-    height: 100%;
-    padding-top: 150px;
-    background-image: url(../img/background/bg-home.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.about-section {
-    padding-top: 100px;
-    background: #f9f9f9;
-}
-
-.skills-section {
-    padding-top: 80px;
-}
-
-.project-section {
-    padding-top: 0px;
-}
-
-.contact-section {
-    height: 100%;
-    padding-top: 150px;
-    background: #fff;
-}
-=======
->>>>>>> master
