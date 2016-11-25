@@ -7,7 +7,7 @@ $(function () {
                     $(this.el).find('.percent').text(Math.round(percent));
                 }, 
                 size: 100,
-                animate: 2000,
+                animate: 5000,
                 lineCap: 'butt',
                 scaleColor: false,
                 barColor: '#C5EDFF',

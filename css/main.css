@@ -29,15 +29,48 @@
 }
 
 /*SPACE*/
-.space1{
+/*.space1{
     background-image: url(../img/background/space-one.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 50%;
+}*/
+.space2{
+    background-image: url(../img/background/bg-project.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 40%;
 }
 
-/*HOME*/
+/*---------------HOME--------------------*/
+#text {
+    color: black;
+    font-family: 'play', cursive;
+    font-size: 20px;
+}
+
+#text:after {
+    position: relative;
+    content: "|";
+    color: transparent;
+    background-color: black;
+    text-shadow: 0px 0px;
+    animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+    0%,
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    50% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
 .text-home{
     color: rgb(197, 237, 255);
 }
@@ -109,11 +142,12 @@
 }
 
 /*PROJECT*/
-#project h1{
+.space2 h1{
     font-size: 85px;
     font-family: 'Playball', cursive;
     font-weight:bold;
-    padding-bottom: 20px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 .thumbail img{
     width: 100%;

@@ -1,26 +1,60 @@
-window.addEventListener('load', function(){   
-    function maquina(contenedor,texto,intervalo){
-        // Calculamos la longitud del texto
-        longitud = texto.length;
-        // Obtenemos referencia del div donde se va a alojar el texto.
-        cnt = document.getElementById(contenedor);
-        var i=0;
-        // Creamos el timer
-        timer = setInterval(function(){
-            // Vamos añadiendo letra por letra y la _ al final.
-            cnt.innerHTML = cnt.innerHTML.substr(0,cnt.innerHTML.length-1) + texto.charAt(i) + "|";
-            // Si hemos llegado al final del texto..
-            if(i >= longitud){
-                // Salimos del Timer y quitamos la barra baja (!)
-                clearInterval(timer);
-                cnt.innerHTML = cnt.innerHTML.substr(0,longitud);
-            } else {
-                // En caso contrario.. seguimos
-                i++;
+'use strict';
+
+(function () {
+    var words = ['FRONT-END DEVELOPER'],
+        text = document.getElementById('text'),
+        count = 0;
+
+    function displayWord(word) {
+        var charCount = 0,
+            charInterval = setInterval(function () {
+
+                text.textContent += word[charCount];
+
+                charCount++;
+
+                if (charCount >= word.length) {
+
+                    if (count < words.length) {
+                        setTimeout(function () {
+                            deleteWord(word);
+                        }, 300);
+                    }
+                    clearInterval(charInterval);
+                }
+            }, 150);
+    }
+
+    function deleteWord() {
+        var deleteCount = text.textContent.length,
+            deleteInterval = setInterval(function () {
+
+                text.textContent = text.textContent.slice(0, -1);
+
+                deleteCount--;
+
+                if (deleteCount <= 0) {
+                    clearInterval(deleteInterval);
+                }
+            }, 150);
+    }
+
+    setTimeout(function () {
+        displayInterval = setInterval(function () {
+            displayWord(words[count]);
+
+            count++;
+
+            if (count >= word.length) {
+                clearInterval(charInterval);
             }
-        },intervalo);
-    };
-    var texto = "FRONT - END DEVELOPER";
-    // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
-    maquina("maquinas",texto,120);
-});
+        }, 1500);
+    }, 2750);
+
+    function init() {
+        displayWord(words[count]);
+        count++;
+    }
+
+    init();
+})();
