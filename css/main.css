@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+#aboutme,
+#skill,
+#porfolio,
+#contact{
+    padding-top: 55px;
+    margin-bottom: 45px;
+}
+/*NAVBAR*/
+header .navbar{
+    background-color: transparent;
+    border: none;
+    padding: 0.5em;
+    margin-bottom: 0;
+}
+
+.navbar #bs-example-navbar-collapse-1 .list{
+    font-size: 1em;
+    color: darkorange;
+}
+.navbar #bs-example-navbar-collapse-1 .list:hover{
+    color: white;
+    background-color: transparent;
+}
+.nav>li>.list:focus,
+.nav>li>.list:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+/*HEADER*/
+#home{
+    background-attachment: fixed;
+    background-image: url(../img/header3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.cont-text{
+    line-height: 1;
+    padding-top: 15%;
+}
+.frontend {
+    font-size: 43px;
+    color: whitesmoke;
+}
+.date{
+    line-height: 1;
+    margin-top: 10px;
+}
+.developer{
+    font-size: 43px;
+    color: whitesmoke;
+}
+.name {
+    color: turquoise;
+    font-weight: bold;
+    font-size: 7em;
+}
+.last-name {
+    margin-top: 10px;
+    color: turquoise;
+    font-weight: bold;
+    font-size: 6em;
+}
+@media(max-width:622px){
+    .developer,
+    .fontend{
+        font-size: 40px;
+    }
+    .name{
+        font-size: 5em;
+    }
+    .last-name{
+        font-size: 4em;
+    }
+}
+
+
+/*ABOUT-ME*/
+.tittle-aboutme{
+    font-size: 145px;
+    font-weight: bold;
+}
+.letter-a{
+    margin: -53px 0px 0px -65px;
+    width: 350px;
+}
+.aboutme-text{
+    text-align: justify;
+    padding: 30px 0px;
+}
+@media(max-width:1199px) {
+    .letter-a{
+        display: none;
+    }
+}
+
+/*SKILL*/
+.tittle-skill{
+    font-size: 105px;
+    font-weight: bold;
+}
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.percent {
+    display: inline-block;
+    line-height: 100px;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: 1em;
+}
+
+/*PORTFOLIO*/
+.tittle-portfolio{
+    font-weight: bold;
+    font-size: 105px;
+}
+.link-boxes {
+    margin: 100px auto;
+    text-align: center;
+}
+.link-box-wrapper {
+    max-height: 480px;
+    max-width: 310px;
+    height: 480px;
+    width: 320px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+.link-box {
+    width: 100%;
+    height: 100%;
+}
+.link-box.link.box-1 {
+    background: url("../img/portafolio/cinema.png") no-repeat #000 center;
+    background-size: cover;
+}
+.link-box.link.box-2 {
+    background: url("http://fc08.deviantart.net/fs70/i/2013/244/7/0/ram_skull_by_szorny_stock-d6kkdz6.jpg") no-repeat #000 center;
+    background-size: cover;
+}
+.link-box.link.box-3 {
+    background: url("http://fc08.deviantart.net/fs70/i/2013/244/7/0/ram_skull_by_szorny_stock-d6kkdz6.jpg") no-repeat #000 center;
+    background-size: cover;
+}
+.link-box.link.box-4 {
+    background: url("../img/portafolio/cinema.png") no-repeat #000 center;
+    background-size: cover;
+}
+.link-box.link.box-5 {
+    background: url("http://fc08.deviantart.net/fs70/i/2013/244/7/0/ram_skull_by_szorny_stock-d6kkdz6.jpg") no-repeat #000 center;
+    background-size: cover;
+}
+.link-box.link.box-6 {
+    background: url("http://fc08.deviantart.net/fs70/i/2013/244/7/0/ram_skull_by_szorny_stock-d6kkdz6.jpg") no-repeat #000 center;
+    background-size: cover;
+}
+.link-box.link {
+    display: block;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.lb-overlay {
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+}
+.lb-top {
+    top: 0;
+    height: 70%;
+    border-bottom-right-radius: 160px;
+    border-bottom-left-radius: 160px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.8, 1);
+}
+.link-box:hover .lb-top {
+    transform: translateY(-350px) scaleX(50);
+}
+.lb-top-text {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+    z-index: 200;
+    transition: 300ms;
+}
+.link-box:hover .lb-top-text {
+    transform: translateY(-20px);
+}
+.link-box:hover .lb-top-text>p {
+    opacity: 0;
+}
+.lb-bottom {
+    bottom: 0;
+    height: 0;
+    max-height: 50px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    text-align: center;
+}
+.lb-bottom h4 {
+    margin-top: 10px;
+    transition: 200ms;
+}
+.link-box:hover .lb-bottom {
+    height: 50px;
+}
+.lb-bottom:hover h4 {
+    transform: scale(1.05);
+}
+.lb-screen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index:1;
+    transition: 500ms;
+}
+.link-box:hover .lb-screen {
+    opacity: 0;
+}
+
+/*CONTACT*/
+.tittle-contact{
+    font-weight: bold;
+    font-size: 102px;
+}
+ul.social-network {	
+    margin: 0;
+    margin-left:0;
+    padding-left: 0;
+    list-style: none;
+}
+ul.social-network li {
+    display: inline;
+    margin: 5px 5px;
+}
+ul.social-network li a:hover span .fa-circle {
+    color: gray;
+}
+.icon-social{
+    color:darkorange;
+}
+.email{
+    color: gray;
+}
+.email:hover{
+    color: darkorange;;
+}
+.cv{
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    border: 1px solid darkorange;
+    background-color: darkorange;
+    color: white;
+    text-decoration: none;
+}
+.cv:hover {
+    border: 1px solid darkorange;
+    background-color: white;
+    color: darkorange;
+}
+.cv span{
+    margin-right: 1em;
+}
+.autor{
+    background-color: #231F20;
+    color: white;
+    padding: 1.2em 0;
+}
+
+/*TOP*/
+#toTop {
+    background:black;
+    cursor:pointer;
+    display:none;
+    color:yellow;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+    height: 32px;
+    width: 32px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+
+    opacity: 0.5;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+}
+
+/*WOW*/
+.wow {
+    visibility: hidden;
+}
