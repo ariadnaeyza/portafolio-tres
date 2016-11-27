@@ -1,114 +1,80 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ariadna Eyzaguirre</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!----------------------BOOTSTRAP------------------------->
-    <link rel='stylesheet' href='css/bootstrap/bootstrap-theme.min.css'>
+    
+    <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap/col-15.css">
-    <!---------------------FONT-AWESOME----------------------->
-    <link rel='stylesheet' href='css/fonts/font-awesome.min.css'>
-    <!----------------------ANIMATE-------------------------->
-    <link rel='stylesheet prefetch' href='css/animate/animate.min.css'>
-    <!----------------------GENERAL-------------------------->
-    <link rel="stylesheet" href="css/style.css">
-    <!-----------------------NAVBAR-------------------------->
-    <link rel="stylesheet" href="css/scrolling-nav.css">
-    <!-----------------------HOME---------------------------->
-    <link rel="stylesheet" href="css/home.css">
-    <!---------------------ABOUT-ME-------------------------->
-    <link rel="stylesheet" href="css/about-me.css">
-    <!-----------------------SKILLS-------------------------->
-    <link rel="stylesheet" href="css/skills.css">
-    <!----------------------PROJECT-------------------------->
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    
 </head>
-
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <p>Ariadna Eyzaguirre</p>
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li><a class="page-scroll" href="#aboutme">Sobre Mí</a></li>
-                    <li><a class="page-scroll" href="#skills">Habilidades</a></li>
-                    <li><a class="page-scroll" href="#project">Proyectos</a></li>
-                    <li><a class="page-scroll" href="#contact">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Home Section -->
-    <section id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 pt-10">
-                    <div class="text-home">
-                        <h1 class="pb-3">Ariadna Eyzaguirre</h1>
-                        <h2 id="text" class="pb-3"></h2>
-                    </div>
-                    <a class="btn page-scroll" href="#aboutme"><i class="fa fa-sort-desc fa-4x"></i></a>
+    <!---------------------HEADER------------------->
+    <header id="home">
+        <!---------------------NAVBAR------------------>
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <div>
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="list page-scroll" href="#aboutme">SOBRE MÍ</a></li>
+                        <li><a class="list page-scroll" href="#skill">HABILIDADES</a></li>
+                        <li><a class="list page-scroll" href="#portfolio">PORTAFOLIO</a></li>
+                        <li><a class="list page-scroll" href="#contact">CONTACTO</a></li> 				
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
+       <div class="container">
+            <div class="wow fadeInLeft cont-text">
+                <div class="frontend">FRONT END</div>
+                <div class="developer">DEVELOPER//</div>
+            </div>
+            <div class="wow bounceInLeft date">
+                <div class="name">ARIADNA</div>
+                <div class="last-name">EYZAGUIRRE</div>
+            </div>
+       </div>
+    </header>
+    <!--------------------ABOUTME------------------->
+    <section id="aboutme">
+        <div class="container">
+            <h1 class="text-right tittle-aboutme wow fadeInUp">SOBRE MÍ</h1>
+            <div class="row">
+                <div class="col-lg-3">
+                    <img class="letter-a wow fadeInLeft" src="img/mayA.png" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-lg-6">
+                    <p class="aboutme-text wow slideInUp" >¡Hola!, soy <b>Ariadna Eyzaguirre</b>, tengo 18 años y soy <b> Front-end developer junior, </b> de la quinta promoción de <b>LABORATORIA</b>; donde pude descubrir mi pasion por los codigos.
+                    <br>
+                    <br>Me gusta que el cliente se encuentre satisfecho, con mi trabajo, y no descanso hasta que obtenga el producto deseado con un plus que genere un gran impacto.
+                    <br>
+                    <br>Soy muy curiosa y autodidacta, con ganas de aprender cada día.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-lg-3 text-center">
+                    <img class="img-responsive wow lightSpeendIn" src="img/perfil.jpg" alt="">
+                </div>
+            </div>
+        </div>        
     </section>
-
-    <!-- #aboutme -->
-    <section id="aboutme" class="pb-10">
+    <!--------------------SKILLS-------------------->
+    <section id="skill">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img class="img-responsive wow fadeInDown" src="img/perfil.jpg" alt="perfil">
-                </div>
-                <div class="col-lg-6">
-                    <div class="intro-text">
-                        <div class="name wow fadeInLeft">Sobre mí</div>
-                        <div class="text wow fadeInRight">
-                            <p>¡Hola!, soy <b>Ariadna Eyzaguirre</b>, tengo 18 años, <b>desarrolladora front-end web junior</b> de la quinta promoción de <b>LABORATORIA</b>, el lugar donde puede descubrir mi pasion por los codigos y afinar mis habilidades.
-                                <br>
-                                <br> Soy muy curiosa y autodidacta con ganas de aprender cada día cosas nuevas.
-                                <br>
-                                <br>Me gusta que el cliente se encuentre satisfecho con mi trabajo y no descanso hasta que el consiga el producto que quiere y mas.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- / #Introduction -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="pb-10">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="name wow bounce">Habilidades</div>
-                </div>
-            </div>
-            <div class="row mrl-3">
+            <h1 class="text-left tittle-skill wow bounceInUp">HABILIDADES</h1>
+            <div class="row text-center">
                 <div class="col-xs-6 col-sm-4 col-lg-15">
-                    <span class="chart" data-percent="80">
+                    <span class="chart " data-percent="80">
                         <span class="percent"></span>
                     </span>
                     <h4><i class="fa fa-html5 "></i> HTML</h4>
@@ -170,16 +136,14 @@
             </div>
         </div>
     </section>
-
-    <!-- #Portfolio -->
+    
+    <!-------------------PORTFOLIO------------------>
     <section id="portfolio">
-        <div class="cont-port">
-            <div class="name">Proyectos</div>
-            <p>Mi experiencia a prueba en cada uno de mis trabajos.</p>
-        </div>
         <div class="container">
-           <div class="row">
-               <div class="col-lg-4">
+            <h1 class="text-right tittle-portfolio">PORTAFOLIO</h1>
+            <p class="text-center">Proyectos donde demuestro mis habilidades tecnicas.</p>
+            <div class="row">
+                <div class="col-lg-4">
                     <div class="link-box-wrapper">
                         <div class="link-box">
                             <a class="link-box link box-1" href="#">
@@ -194,27 +158,11 @@
                             </a>
                         </div>
                     </div>
-               </div>
-               <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
                     <div class="link-box-wrapper">
                         <div class="link-box">
-                            <a class="link-box link box-1" href="#">
-                                <div class="lb-overlay lb-top"></div>
-                                <div class="lb-top-text">
-                                    <h3>Project 1</h3>
-                                    <p>This is some text that I would use to describe whatever this is hiding.</p>
-                                </div>
-                                <div class="lb-overlay lb-bottom">
-                                    <h4>Click to View</h4></div>
-                                <div class="lb-screen"></div>
-                            </a>
-                        </div>
-                   </div>
-               </div>
-               <div class="col-lg-4">
-                    <div class="link-box-wrapper">
-                        <div class="link-box">
-                            <a class="link-box link box-1" href="#">
+                            <a class="link-box link box-2" href="#">
                                 <div class="lb-overlay lb-top"></div>
                                 <div class="lb-top-text">
                                     <h3>Project 1</h3>
@@ -226,108 +174,143 @@
                             </a>
                         </div>
                     </div>
-               </div>
-           </div>
-            <div class="link-box-wrapper">
-                <div class="link-box">
-                    <a class="link-box link box-1" href="#">
-                        <div class="lb-overlay lb-top"></div>
-                        <div class="lb-top-text">
-                            <h3>Project 1</h3>
-                            <p>This is some text that I would use to describe whatever this is hiding.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="link-box-wrapper">
+                        <div class="link-box">
+                            <a class="link-box link box-3" href="#">
+                                <div class="lb-overlay lb-top"></div>
+                                <div class="lb-top-text">
+                                    <h3>Project 1</h3>
+                                    <p>This is some text that I would use to describe whatever this is hiding.</p>
+                                </div>
+                                <div class="lb-overlay lb-bottom">
+                                    <h4>Click to View</h4></div>
+                                <div class="lb-screen"></div>
+                            </a>
                         </div>
-                        <div class="lb-overlay lb-bottom">
-                            <h4>Click to View</h4></div>
-                        <div class="lb-screen"></div>
-                    </a>
+                    </div>
                 </div>
             </div>
-            <div class="link-box-wrapper">
-                <div class="link-box">
-                    <a class="link-box link box-2" href="#">
-                        <div class="lb-overlay lb-top"></div>
-                        <div class="lb-top-text">
-                            <h3>Project 2</h3>
-                            <p>This is some text that I would use to describe whatever this is hiding.</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="link-box-wrapper">
+                        <div class="link-box">
+                            <a class="link-box link box-4" href="#">
+                                <div class="lb-overlay lb-top"></div>
+                                <div class="lb-top-text">
+                                    <h3>La Republica</h3>
+                                    <p>Hecho con Bootstrap, Html y Css</p>
+                                </div>
+                                <div class="lb-overlay lb-bottom">
+                                    <h4>Ver Demo</h4></div>
+                                <div class="lb-screen"></div>
+                            </a>
                         </div>
-                        <div class="lb-overlay lb-bottom">
-                            <h4>Click to View</h4></div>
-                        <div class="lb-screen"></div>
-                    </a>
+                    </div>
                 </div>
-            </div>
-            <div class="link-box-wrapper">
-                <div class="link-box">
-                    <a class="link-box link box-3" href="#">
-                        <div class="lb-overlay lb-top"></div>
-                        <div class="lb-top-text">
-                            <h3>Project 3</h3>
-                            <p>This is some text that I would use to describe whatever this is hiding.</p>
+                <div class="col-lg-4">
+                    <div class="link-box-wrapper">
+                        <div class="link-box">
+                            <a class="link-box link box-5" href="#">
+                                <div class="lb-overlay lb-top"></div>
+                                <div class="lb-top-text">
+                                    <h3>Project 1</h3>
+                                    <p>This is some text that I would use to describe whatever this is hiding.</p>
+                                </div>
+                                <div class="lb-overlay lb-bottom">
+                                    <h4>Click to View</h4></div>
+                                <div class="lb-screen"></div>
+                            </a>
                         </div>
-                        <div class="lb-overlay lb-bottom">
-                            <h4>Click to View</h4></div>
-                        <div class="lb-screen"></div>
-                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="link-box-wrapper">
+                        <div class="link-box">
+                            <a class="link-box link box-6" href="#">
+                                <div class="lb-overlay lb-top"></div>
+                                <div class="lb-top-text">
+                                    <h3>Project 1</h3>
+                                    <p>This is some text that I would use to describe whatever this is hiding.</p>
+                                </div>
+                                <div class="lb-overlay lb-bottom">
+                                    <h4>Click to View</h4></div>
+                                <div class="lb-screen"></div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- #Contact -->
+    <!-------------------CONTACT-------------------->
     <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="name">Contacto</div>
-                    <p>Si quieres una pagina para tu empresa o quieres a alguien en tu equipo que cree paginas geniales.
-                    <br>
-                    <br>No dudes de ponerte en contacto conmigo.</p>
-                    <ul class="list-inline text-center">
+       <div class="container">
+            <h1 class="text-left tittle-contact">CONTÁCTAME</h1>
+            <div class="row text-center">
+                <div class="col-md-4 col-xs-12">
+                    <h4>CONTACTO DIRECTO</h4>
+                    <a class="email" href="mailito:ariadna.eyzaguirre@gmail.com"><i class="fa fa-envelope"></i>ariadna.eyzaguirre@gmail.com</a>
+                    <p><i class="fa fa-phone"></i>051 999-959-515</p>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <h4>REDES SOCIALES</h4>
+                    <ul class="social-network">
                         <li>
-                            <a href="https://twitter.com/pcrub" class="btn-social btn-outline wow lightSpeedIn"><i class="fa fa-fw fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/ariadna-eyzaguirre">
+                                <span class="fa-stack fa-2x icon-social">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://github.com/pcrubianoa" class="btn-social btn-outline wow lightSpeedIn"><i class="fa fa-fw fa-github"></i></a>
+                            <a href="https://github.com/ariadnaeyza">
+                                <span class="fa-stack fa-2x icon-social">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/ariadna-eyzaguirre" class="btn-social btn-outline wow lightSpeedIn"><i class="fa fa-fw fa-linkedin"></i></a>
+                            <a href="https://es.pinterest.com/ariaeyza/">
+                                <span class="fa-stack fa-2x icon-social">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:ariadna.eyzaguirre@gmail.com">
+                                <span class="fa-stack fa-2x icon-social">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>         
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- / #Contact -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-12">
-                    Copyright &copy; AriaEyza | 2016
+                <div class="col-md-4 col-xs-12">
+                    <h4>DESCARGA MI CV</h4>
+                    <p>Si deseas tener un detalle de mi experiencia laboral lo invito a descargar mi Cv</p>
+                    <a class="cv" href=""><i class="fa fa-download"></i><h>Descargar CV</span></a>.
                 </div>
             </div>
-        </div>
+       </div>
+    </section>
+    <footer class="autor">
+        <p class="text-center">Copyright © AriaEyza 2016</p>
     </footer>
-    <!-- / Footer -->
-
-    <!--------------------------------BOOTSTRAP--------------------------------->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js'></script>
-
-    <!-------------------------------ANIMATE------------------------------------->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-
-    <!----------------WORD------------------------------------------------------->
-    <script src="js/machine-word.js"></script>
-    <!----------------------------------SKILLS----------------------------------->
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.easypiechart.min.js"></script>
     <script src="js/waypoints.min.js"></script>
-
-    <!------------------------------GENERAL-------------------------------------->
-    <script src="js/index.js"></script>
-
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    
 </body>
-
 </html>
+
