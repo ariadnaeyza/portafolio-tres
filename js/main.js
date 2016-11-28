@@ -1,3 +1,6 @@
+/*WOW*/
+new WOW().init();
+
 /*SCROLL*/
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
@@ -8,9 +11,6 @@ $(function() {
         event.preventDefault();
     });
 });
-
-/*WOW*/
-new WOW().init();
 
 /*TOP*/
 jQuery(function( $ ){
