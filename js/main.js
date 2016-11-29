@@ -52,12 +52,3 @@ $(function () {
         offset: '80%'
     });
 });
-
-
-
-jQuery(document).ready(function () { // Para añadir una capa de 'Cargando' y ocultar la galería mientras cargan sus imágenes
-    jQuery('.galeria-ampliable').addClass('indentado').before('<div id="cargando"><p>Cargando...</p></div>');
-});
-jQuery(window).load(function () { // Generación de la galería
-    jQuery('.galeria-ampliable').galeria({}).hide().removeClass('indentado').fadeIn(1000).prev().remove();
-});
