@@ -1,21 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 18px;
     box-sizing: border-box;
 }
 body{
     background-color: whitesmoke;
     text-align: center;
 }
-.separador{
-    background-image: url(../img/hcug5qqzrxe-mario-calvo.jpg);
-    height: 300px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 /*NAVBAR*/
 header .navbar{
     background-color: #030804;
@@ -27,7 +19,7 @@ header .navbar{
 .navbar #bs-example-navbar-collapse-1 .list{
     font-size: 1em;
     font-weight: bold;
-    color: darkorange;
+    color: yellow;
 }
 .navbar #bs-example-navbar-collapse-1 .list:hover{
     color: white;
@@ -41,14 +33,15 @@ header .navbar{
 /*HEADER*/
 #home{
     background-attachment: fixed;
-    background-image: url(../img/header3.jpg);
+    background-image: url(../img/header2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 .cont-text{
     line-height: 1;
-    padding-top: 15%;
+    padding-top: 3%;
+    margin-left: 90px;
 }
 .frontend {
     font-size: 43px;
@@ -56,6 +49,7 @@ header .navbar{
 }
 .date{
     line-height: 1;
+    padding-top: 19%;
     margin-top: 10px;
 }
 .developer{
@@ -63,15 +57,18 @@ header .navbar{
     color: whitesmoke;
 }
 .name {
-    color: turquoise;
+    color: white;
     font-weight: bold;
     font-size: 7em;
+    background-color: black;
+    width: 477px;
 }
 .last-name {
     margin-top: 10px;
-    color: turquoise;
-    font-weight: bold;
-    font-size: 6em;
+    color: white;
+    width: 460px;
+    background-color: rgb(0, 0, 0);
+    font-size: 5em;
 }
 @media(max-width:622px){
     .developer,
@@ -88,32 +85,39 @@ header .navbar{
 
 
 /*ABOUT-ME*/
-#aboutme{
-    padding-top: 55px;
-    padding-bottom: 45px;
+#aboutme, #skill{
+    padding: 55px 0px;
 }
 .tittle-aboutme{
-    font-size: 145px;
-    font-weight: bold;
-}
-.letter-a{
-    margin: -53px 0px 0px -65px;
-    width: 350px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 .aboutme-text{
-    text-align: justify;
-    padding: 30px 0px;
+    font-size: 16px;
+    text-align: center;
+    padding: 50px 0px;
 }
 @media(max-width:1199px) {
     .letter-a{
         display: none;
     }
+    #aboutme img {
+        width: 50%;
+        text-align: center;
+        margin: 0px;
+    }
 }
 
 /*SKILL*/
 .tittle-skill{
-    font-size: 105px;
-    font-weight: bold;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin-bottom: 60px;
 }
 .chart {
     position: relative;
@@ -146,11 +150,27 @@ header .navbar{
 }
 
 /*PORTFOLIO*/
-
+/*#portfolio{
+    background-image: url(../img/portfolio.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
 .tittle-portfolio{
-    font-weight: bold;
-    font-size: 105px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin: 50px 0px;
 }
+.card {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 figure.snip1104 {
     font-family: 'Raleway', Arial, sans-serif;
@@ -187,6 +207,7 @@ figure.snip1104 figcaption {
 }
 
 figure.snip1104 h2 {
+    font-size: 20px;
     position: absolute;
     left: 40px;
     right: 40px;
@@ -201,22 +222,18 @@ figure.snip1104 h2 {
     font-weight: 400;
 }
 
-figure.snip1104 h2 span {
-    font-weight: 800;
-}
-
 figure.snip1104:before {
     height: 100%;
+    background-color: yellow;
     width: 100%;
     top: 0;
     left: 0;
     content: '';
-    background: #ffffff;
     position: absolute;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     -webkit-transform: rotate(110deg) translateY(-50%);
-    transform: rotate(110deg) translateY(-50%);
+    transform: rotate(119deg) translateY(-91%);
 }
 
 figure.snip1104 a {
@@ -228,28 +245,12 @@ figure.snip1104 a {
     z-index: 1;
 }
 
-figure.snip1104.blue {
-    background: #123851;
-}
-
-figure.snip1104.blue h2 {
-    background: #0a212f;
-}
-
-figure.snip1104.red {
-    background: #581a14;
-}
-
-figure.snip1104.red h2 {
-    background: #36100c;
-}
-
 figure.snip1104.yellow {
-    background: #7f5006;
+    background: #000000;
 }
 
 figure.snip1104.yellow h2 {
-    background: #583804;
+    background: rgba(32, 37, 41, 0.81);;
 }
 
 figure.snip1104:hover img,
@@ -275,8 +276,11 @@ figure.snip1104.hover:before {
     padding: 88px 0px;
 }
 .tittle-contact{
-    font-weight: bold;
-    font-size: 102px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 ul.social-network {	
     margin: 0;
@@ -292,7 +296,7 @@ ul.social-network li a:hover span .fa-circle {
     color: gray;
 }
 .icon-social{
-    color:darkorange;
+    color:black;
 }
 .email{
     color: black;
@@ -303,8 +307,8 @@ ul.social-network li a:hover span .fa-circle {
 .cv{
     padding: 0.5em 2em;
     border-radius: 5px;
-    border: 1px solid darkorange;
-    background-color: darkorange;
+    border: 1px solid white;
+    background-color: black;
     color: white;
     text-decoration: none;
 }
